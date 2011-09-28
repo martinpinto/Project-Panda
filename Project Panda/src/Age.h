@@ -1,21 +1,22 @@
 #include <iostream>
 #include <vector>
-#include <time.h>
+#include <ctime>
 
 #ifndef _AGE_H_
 #define _AGE_H_
 
 class Age {
-      typedef time_t Date;
-      
-      public:
-             Age();
-             int getCurrentAge();
-             void setCurrentAge(int age);
-             Date getBirthday();
-      
-      private:
-              int age;
-              Date birthday;
+
+public:
+	Age();
+	Age(int agingFactor);
+	int getCurrentAge();
+	long getBirthday();
+
+private:
+	int age;
+	int agingFactor; // causes the gotshi to age a factor faster
+	long birthday;
+	int computeCurrentAge();
 };
 #endif
