@@ -5,6 +5,14 @@
 #ifndef _AGE_H_
 #define _AGE_H_
 
+enum AgePhase {
+	Baby,
+	Child,
+	Teenager,
+	Adult,
+	Grandpa
+};
+
 class Age {
 
 public:
@@ -12,6 +20,7 @@ public:
 	Age(int agingFactor);
 	int getCurrentAge();
 	long getBirthday();
+	AgePhase getAgePhase();
 
 private:
 	int age;
@@ -19,4 +28,5 @@ private:
 	long birthday;
 	int computeCurrentAge();
 };
+
 #endif

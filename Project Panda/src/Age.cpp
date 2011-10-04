@@ -21,6 +21,27 @@ Age::Age(int agingFactor) {
 	this->agingFactor = agingFactor;
 }
 
+/**
+ * computes and returns the current Age Phase
+ */
+
+AgePhase Age::getAgePhase() {
+	int age = getCurrentAge();
+	if (age < 4) {
+		return Baby;
+	} else if (age < 13) {
+		return Child;
+	} else if (age < 20) {
+		return Teenager;
+	} else if (age < 67) {
+		return Adult;
+	} else
+		return Grandpa;
+}
+
+/**
+ * computes and returns the current age
+ */
 int Age::getCurrentAge() {
 	int age = computeCurrentAge();
 	if (age < 100) {
