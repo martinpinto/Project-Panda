@@ -1,16 +1,24 @@
+/*
+ * Character.cpp
+ *
+ * Created on: 04.09.2011
+ * Author: Martin Pinto-Bazurco, Martin Prodanov
+ *
+ */
+
 #include <iostream>
 #include <string>
 
 #include "Character.h"
-#include "Age.h"
-#include "Hunger.h"
-#include "Temperature.h"
-#include "Mood.h"
+#include "..\Age.h"
+#include "..\mechanics\eating\Hunger.h"
+#include "..\mechanics\temperature\Temperature.h"
+#include "..\mechanics\mood\Mood.h"
 
 Character::Character() {
 
 }
-                       
+
 Age Character::getAge() {
 	return this->age;
 }
