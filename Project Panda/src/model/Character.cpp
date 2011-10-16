@@ -10,7 +10,7 @@
 #include <string>
 
 #include "Character.h"
-#include "..\Age.h"
+#include "..\mechanics\aging\Age.h"
 #include "..\mechanics\eating\Hunger.h"
 #include "..\mechanics\temperature\Temperature.h"
 #include "..\mechanics\mood\Mood.h"

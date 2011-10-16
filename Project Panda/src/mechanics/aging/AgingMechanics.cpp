@@ -21,8 +21,8 @@ void AgingMechanics::wait(int seconds) {
 }
 
 Age AgingMechanics::increaseAge(Age age) {
-    int currentAge = age.getCurrentAge();
-    age.setCurrentAge(++currentAge);
+    //int currentAge = age.getCurrentAge();
+    //age.setCurrentAge(++currentAge);
     
     return age;
 }
@@ -32,5 +32,5 @@ void AgingMechanics::estimatePhase() {
 }
 
 Age AgingMechanics::computeAgeDetails() {
-
+	return NULL;
 }

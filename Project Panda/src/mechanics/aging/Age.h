@@ -2,7 +2,7 @@
  * Age.h
  *
  * Created on: 04.09.2011
- * Author: Martin Pinto-Bazurco
+ * Author: Martin Pinto-Bazurco, Martin Prodanov
  *
  */
 

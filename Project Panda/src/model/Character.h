@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <vector>
-#include "..\Age.h"
+#include "..\mechanics\aging\Age.h"
 #include "..\mechanics\want\Want.h"
 #include "..\mechanics\need\Need.h"
 #include "..\mechanics\eating\Hunger.h"

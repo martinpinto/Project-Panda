@@ -20,6 +20,7 @@ class CleaningMechanics {
 
 	public:
 		CleaningMechanics();
+		virtual ~CleaningMechanics();
 		void increaseCleaniness(double threshold);
 		void increaseCleaniness(int threshold);
 		void decreaseCleaniness(double threshold);

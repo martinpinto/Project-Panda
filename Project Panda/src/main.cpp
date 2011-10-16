@@ -10,6 +10,8 @@
 #include <cstdlib>
 #include <iostream>
 
+#include "Utils.h"
+#include "model\Character.h"
 #include "mechanics\aging\AgingMechanics.h"
 #include "mechanics\eating\EatingMechanics.h"
 #include "mechanics\cleaning\CleaningMechanics.h"
@@ -55,7 +57,7 @@ void initCharacter(Character character) {
 
 }
 
-void testAgeMechanics(Character character) {
+void testAgingMechanics(Character character) {
 
 	int n = 3; // seconds to wait and years the gotshi to age
 	//new Age growing N times faster 86400 Each second is 1 gotshi year
@@ -192,5 +194,4 @@ void fail(int isValue, int mustValue){
 	cout << "but was: " << isValue << endl;
 	cout << "Test failed!" << endl;
 }
-
 

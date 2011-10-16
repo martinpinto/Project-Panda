@@ -11,7 +11,13 @@
 #include "CleaningMechanics.h"
 
 CleaningMechanics::CleaningMechanics() {
+	dirty = false;
+	cleanliness = 0;
+}
 
+CleaningMechanics::~CleaningMechanics() {
+	delete &dirty;
+	delete &cleanliness;
 }
 
 void CleaningMechanics::increaseCleaniness(double threshold) {
