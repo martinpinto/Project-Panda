@@ -10,7 +10,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Utils.h"
+#include "utils\Utils.h"
 #include "model\Character.h"
 #include "mechanics\aging\AgingMechanics.h"
 #include "mechanics\eating\EatingMechanics.h"

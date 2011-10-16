@@ -49,5 +49,6 @@ bool CleaningMechanics::isDirty() {
 }
 
 void CleaningMechanics::determineCleanliness() {
+	// gotshis get dirty with time
 
 }

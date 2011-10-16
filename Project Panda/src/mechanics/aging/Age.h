@@ -25,15 +25,21 @@ class Age {
 
 public:
 	Age();
+	Age(bool canDie);
 	Age(int agingFactor);
 	int getCurrentAge();
 	long getBirthday();
 	AgePhase getAgePhase();
+	bool canDie();
+	int getMaxAge();
+	void setMaxAge(int maxAge);
 
 private:
 	int age;
 	int agingFactor; // causes the gotshi to age a factor faster
 	long birthday;
+	bool dies;
+	int maxAge;
 	int computeCurrentAge();
 };
 

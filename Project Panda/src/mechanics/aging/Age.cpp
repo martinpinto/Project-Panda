@@ -2,7 +2,7 @@
  * Age.cpp
  *
  * Created on: 04.09.2011
- * Author: Martin Pinto-Bazurco
+ * Author: Martin Pinto-Bazurco, Martin Prodanov
  *
  */
 
@@ -22,6 +22,12 @@
 Age::Age() {
 	this->birthday = time(NULL);
 	this->agingFactor = 1;
+}
+
+Age::Age(bool canDie) {
+	this->birthday = time(NULL);
+	this->agingFactor = 1;
+	this->dies = canDie;
 }
 
 Age::Age(int agingFactor) {
@@ -52,13 +58,12 @@ AgePhase Age::getAgePhase() {
  */
 int Age::getCurrentAge() {
 	int age = computeCurrentAge();
-	if (age < 100) {
-		return age;
-	} else {
-		// age > 99 -> Gotshi must die;
-		// TODO: tell the gotchi to die somehow or check somewhere else
-		return -1;
+	if (age > getMaxAge()) {
+		// age > 99 -> Gotshi can he die?
+		if (canDie())
+			return -1;
 	}
+	return age;
 }
 
 long Age::getBirthday() {
@@ -71,3 +76,14 @@ int Age::computeCurrentAge() {
 	return int(totalLifeTime * agingFactor) / GOTSCHI_YEAR;
 }
 
+int Age::getMaxAge() {
+	return maxAge;
+}
+
+void Age::setMaxAge(int maxAge) {
+	this->maxAge = maxAge;
+}
+
+bool Age::canDie() {
+	return dies;
+}
