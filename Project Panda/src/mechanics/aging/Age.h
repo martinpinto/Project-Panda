@@ -13,6 +13,8 @@
 #ifndef _AGE_H_
 #define _AGE_H_
 
+#define MAX_AGE 1000000;
+
 enum AgePhase {
 	Baby,
 	Child,
@@ -27,6 +29,8 @@ public:
 	Age();
 	Age(bool canDie);
 	Age(int agingFactor);
+	Age(int agingFactor, bool canDie, int maxAge);
+	virtual ~Age();
 	int getCurrentAge();
 	long getBirthday();
 	AgePhase getAgePhase();

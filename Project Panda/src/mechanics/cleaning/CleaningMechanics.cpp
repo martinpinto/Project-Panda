@@ -9,6 +9,7 @@
 #include <iostream>
 #include <stdio.h>
 #include "CleaningMechanics.h"
+#include "../../utils/Utils.h"
 
 CleaningMechanics::CleaningMechanics() {
 	dirty = false;
@@ -48,7 +49,12 @@ bool CleaningMechanics::isDirty() {
 	return dirty;
 }
 
-void CleaningMechanics::determineCleanliness() {
+void CleaningMechanics::determineCleanliness(int time) {
 	// gotshis get dirty with time
+	Utils::wait(time); // every 10 minutes per default
+	increaseCleaniness(1.0);
 
+	if (getCleanlinessPrecise() > 75.0) {
+		this->dirty = true;
+	}
 }

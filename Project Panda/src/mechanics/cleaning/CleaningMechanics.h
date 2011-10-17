@@ -31,7 +31,7 @@ class CleaningMechanics {
 		//void setAlert(string message);
 
 	private:
-		void determineCleanliness();
+		void determineCleanliness(int time);
 
 };
 #endif

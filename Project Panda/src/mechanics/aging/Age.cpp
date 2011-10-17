@@ -22,17 +22,35 @@
 Age::Age() {
 	this->birthday = time(NULL);
 	this->agingFactor = 1;
+	this->maxAge = MAX_AGE;
 }
 
 Age::Age(bool canDie) {
 	this->birthday = time(NULL);
 	this->agingFactor = 1;
+	this->maxAge = MAX_AGE;
 	this->dies = canDie;
 }
 
 Age::Age(int agingFactor) {
 	this->birthday = time(NULL);
 	this->agingFactor = agingFactor;
+	this->maxAge = MAX_AGE;
+}
+
+Age::Age(int agingFactor, bool canDie, int maxAge) {
+	this->birthday = time(NULL);
+	this->agingFactor = 1;
+	this->dies = canDie;
+	this->maxAge = maxAge;
+}
+
+// destructor
+Age::~Age() {
+	delete &birthday;
+	delete &agingFactor;
+	delete &maxAge;
+	delete &dies;
 }
 
 /**

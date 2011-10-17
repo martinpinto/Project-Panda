@@ -9,22 +9,17 @@
 #include <iostream>
 #include <time.h>
 #include "AgingMechanics.h"
+#include "../../utils/Utils.h"
 
 AgingMechanics::AgingMechanics() {
-                             
 }
 
 void AgingMechanics::wait(int seconds) {
-     clock_t endwait;
-     endwait = clock () + seconds * CLOCKS_PER_SEC;
-     while (clock() < endwait) {}
+	Utils::wait(seconds);
 }
 
-Age AgingMechanics::increaseAge(Age age) {
-    //int currentAge = age.getCurrentAge();
-    //age.setCurrentAge(++currentAge);
-    
-    return age;
+Age AgingMechanics::getAge() {
+	return this->age;
 }
 
 void AgingMechanics::estimatePhase() {

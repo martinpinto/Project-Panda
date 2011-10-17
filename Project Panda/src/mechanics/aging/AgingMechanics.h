@@ -16,9 +16,10 @@ class AgingMechanics {
       public:
              AgingMechanics();
              void wait ( int seconds );
-             Age increaseAge(Age age);
              void estimatePhase();
              Age computeAgeDetails();
-             
+             Age getAge();
+      private:
+             Age age;
 };
 #endif
