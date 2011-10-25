@@ -9,10 +9,15 @@
 #include <iostream>
 #include <vector>
 
+#include "../../model/Character.h"
+
 #ifndef _SLEEPING_MECHANICS_H_
 #define _SLEEPING_MECHANICS_H_
 
 class SleepingMechanics {
-
+	public:
+		SleepingMechanics();
+		SleepingMechanics(Character character);
+		virtual ~SleepingMechanics();
 };
 #endif

@@ -10,6 +10,8 @@
 #include <vector>
 #include <string>
 
+#include "../../model/Character.h"
+
 #ifndef _CLEANING_MECHANICS_H_
 #define _CLEANING_MECHANICS_H_
 
@@ -17,9 +19,12 @@ class CleaningMechanics {
 	protected:
 		double cleanliness;
 		bool dirty;
+		short maxDirtyFactor;
 
 	public:
 		CleaningMechanics();
+		CleaningMechanics(Character character);
+		CleaningMechanics(bool isDirty, double cleanliness, short maxDirtyFactor);
 		virtual ~CleaningMechanics();
 		void increaseCleaniness(double threshold);
 		void increaseCleaniness(int threshold);
@@ -28,10 +33,10 @@ class CleaningMechanics {
 		double getCleanlinessPrecise();
 		int getCleanliness();
 		bool isDirty();
+		void determineCleanliness(int time);
 		//void setAlert(string message);
 
 	private:
-		void determineCleanliness(int time);
 
 };
 #endif

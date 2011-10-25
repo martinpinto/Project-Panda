@@ -9,10 +9,15 @@
 #include <iostream>
 #include <vector>
 
+#include "../../model/Character.h"
+
 #ifndef _WANT_MECHANICS_H_
 #define _WANT_MECHANICS_H_
 
 class WantMechanics {
-
+	public:
+		WantMechanics();
+		WantMechanics(Character character);
+		virtual ~WantMechanics();
 };
 #endif

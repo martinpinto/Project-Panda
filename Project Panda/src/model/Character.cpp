@@ -11,6 +11,7 @@
 
 #include "Character.h"
 #include "..\mechanics\aging\Age.h"
+#include "..\mechanics\eating\Weight.h"
 #include "..\mechanics\eating\Hunger.h"
 #include "..\mechanics\temperature\Temperature.h"
 #include "..\mechanics\mood\Mood.h"
@@ -19,8 +20,22 @@ Character::Character() {
 
 }
 
+//Character::~Character() {
+//	delete &age;
+//	delete &weight;
+//	delete &hunger;
+//	delete &mood;
+//	delete &temperature;
+//	delete &wants;
+//	delete &needs;
+//}
+
 Age Character::getAge() {
 	return this->age;
+}
+
+Weight Character::getWeight() {
+	return this->weight;
 }
 
 Hunger Character::getHunger() {

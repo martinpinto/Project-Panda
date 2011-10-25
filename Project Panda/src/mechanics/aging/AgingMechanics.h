@@ -9,12 +9,15 @@
 #include <vector>
 #include "Age.h"
 
+#include "../../model/Character.h"
+
 #ifndef _AGING_MECHANICS_H_
 #define _AGING_MECHANICS_H_
 
 class AgingMechanics {
       public:
              AgingMechanics();
+             AgingMechanics(Character character);
              void wait ( int seconds );
              void estimatePhase();
              Age computeAgeDetails();

@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 	initCharacter(panda);
 
 	// testing the aging system
-	testAgingMechanics(panda);
+	//testAgingMechanics(panda);
 
 	system("PAUSE");
 	return EXIT_SUCCESS;
@@ -143,6 +143,7 @@ void testAgingMechanics(Character character) {
 void testCleaningMechanics(Character character) {
 	CleaningMechanics cleaningMechanics;
 
+	cleaningMechanics.determineCleanliness(1000);
 }
 
 void testEatingMechanics(Character character) {

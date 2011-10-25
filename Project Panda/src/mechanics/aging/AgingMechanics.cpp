@@ -9,9 +9,15 @@
 #include <iostream>
 #include <time.h>
 #include "AgingMechanics.h"
+
 #include "../../utils/Utils.h"
+#include "../../model/Character.h"
 
 AgingMechanics::AgingMechanics() {
+}
+
+AgingMechanics::AgingMechanics(Character character) {
+
 }
 
 void AgingMechanics::wait(int seconds) {
@@ -27,5 +33,6 @@ void AgingMechanics::estimatePhase() {
 }
 
 Age AgingMechanics::computeAgeDetails() {
-	return NULL;
+	Age age;
+	return age;
 }

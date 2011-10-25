@@ -9,10 +9,16 @@
 #include <iostream>
 #include <vector>
 
+#include "../../model/Character.h"
+
 #ifndef _HEALTH_MECHANICS_H_
 #define _HEALTH_MECHANICS_H_
 
 class HealthMechanics {
 
+	public:
+		HealthMechanics();
+		HealthMechanics(Character character);
+		virtual ~HealthMechanics();
 };
 #endif

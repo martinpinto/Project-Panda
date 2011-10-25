@@ -15,6 +15,7 @@
 class Hunger {
 	protected:
 		bool hunger;
+		int hungerFactor;
 
 	public:
 		bool hasHunger();

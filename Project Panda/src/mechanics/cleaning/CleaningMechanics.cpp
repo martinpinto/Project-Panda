@@ -9,16 +9,30 @@
 #include <iostream>
 #include <stdio.h>
 #include "CleaningMechanics.h"
+
 #include "../../utils/Utils.h"
+#include "../../model/Character.h"
 
 CleaningMechanics::CleaningMechanics() {
 	dirty = false;
-	cleanliness = 0;
+	cleanliness = 100;
+	maxDirtyFactor = 75;
+}
+
+CleaningMechanics::CleaningMechanics(Character character) {
+
+}
+
+CleaningMechanics::CleaningMechanics(bool isDirty, double cleanliness, short maxDirtyFactor) {
+	dirty = isDirty;
+	this->cleanliness = cleanliness;
+	this->maxDirtyFactor = maxDirtyFactor;
 }
 
 CleaningMechanics::~CleaningMechanics() {
 	delete &dirty;
 	delete &cleanliness;
+	delete &maxDirtyFactor;
 }
 
 void CleaningMechanics::increaseCleaniness(double threshold) {
@@ -51,10 +65,11 @@ bool CleaningMechanics::isDirty() {
 
 void CleaningMechanics::determineCleanliness(int time) {
 	// gotshis get dirty with time
-	Utils::wait(time); // every 10 minutes per default
+	Utils::wait(time);
+	// decrease cleanliness
 	increaseCleaniness(1.0);
 
-	if (getCleanlinessPrecise() > 75.0) {
+	if (getCleanlinessPrecise() > maxDirtyFactor) {
 		this->dirty = true;
 	}
 }

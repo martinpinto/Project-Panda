@@ -12,7 +12,13 @@
 #ifndef _LEARNING_MECHANICS_H_
 #define _LEARNING_MECHANICS_H_
 
+#include "../../model/Character.h"
+
 class LearningMechanics {
 
+	public:
+		LearningMechanics();
+		LearningMechanics(Character character);
+		virtual ~LearningMechanics();
 };
 #endif

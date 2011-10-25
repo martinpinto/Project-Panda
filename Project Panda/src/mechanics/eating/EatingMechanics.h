@@ -9,10 +9,21 @@
 #include <iostream>
 #include <vector>
 
+#include "../../model/Character.h"
+
 #ifndef _EATING_MECHANICS_H_
 #define _EATING_MECHANICS_H_
 
 class EatingMechanics {
+
+	public:
+		EatingMechanics();
+		EatingMechanics(Character character);
+		virtual ~EatingMechanics();
+		void determineHunger();
+
+	private:
+		int caloriesMeter;
 
 };
 #endif

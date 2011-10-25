@@ -9,10 +9,15 @@
 #include <iostream>
 #include <vector>
 
+#include "../../model/Character.h"
+
 #ifndef _PLAYING_MECHANICS_H_
 #define _PLAYING_MECHANICS_H_
 
 class PlayingMechanics {
-
+	public:
+		PlayingMechanics();
+		PlayingMechanics(Character character);
+		virtual ~PlayingMechanics();
 };
 #endif
