@@ -11,8 +11,6 @@
 
 #include "SleepingMechanics.h"
 
-#include "../../model/Character.h"
-
 SleepingMechanics::SleepingMechanics() {
 
 }

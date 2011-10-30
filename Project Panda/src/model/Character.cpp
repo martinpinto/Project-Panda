@@ -10,43 +10,45 @@
 #include <string>
 
 #include "Character.h"
-#include "..\mechanics\aging\Age.h"
-#include "..\mechanics\eating\Weight.h"
-#include "..\mechanics\eating\Hunger.h"
-#include "..\mechanics\temperature\Temperature.h"
-#include "..\mechanics\mood\Mood.h"
+
+Age* age;
+Weight* weight;
+vector<Want>* wants;
+vector<Need>* needs;
+Hunger* hunger;
+Temperature* temperature;
+Mood* mood;
 
 Character::Character() {
 
 }
 
-//Character::~Character() {
-//	delete &age;
-//	delete &weight;
-//	delete &hunger;
-//	delete &mood;
-//	delete &temperature;
-//	delete &wants;
-//	delete &needs;
-//}
-
-Age Character::getAge() {
-	return this->age;
+Character::~Character() {
+	//delete &age;
+	//delete &weight;
+	//delete &hunger;
+	//delete &mood;
+	//delete &temperature;
+	//delete &wants;
+	//delete &needs;
 }
 
-Weight Character::getWeight() {
-	return this->weight;
+Age* Character::getAge() {
+	return age;
 }
 
-Hunger Character::getHunger() {
-	return this->hunger;
+Weight* Character::getWeight() {
+	return weight;
 }
 
-Temperature Character::getTemperature() {
-	return this->temperature;
+Hunger* Character::getHunger() {
+	return hunger;
 }
 
-Mood Character::getMood() {
-	Mood mood;
+Temperature* Character::getTemperature() {
+	return temperature;
+}
+
+Mood* Character::getMood() {
 	return mood;
 }

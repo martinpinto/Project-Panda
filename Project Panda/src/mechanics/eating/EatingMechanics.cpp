@@ -8,8 +8,6 @@
 
 #include "EatingMechanics.h"
 
-#include "../../model/Character.h"
-
 EatingMechanics::EatingMechanics() {
 
 }

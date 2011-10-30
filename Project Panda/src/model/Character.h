@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <vector>
+
 #include "..\mechanics\aging\Age.h"
 #include "..\mechanics\eating\Weight.h"
 #include "..\mechanics\want\Want.h"
@@ -26,21 +27,13 @@ class Character {
 
 	public:
 		Character();
-		//virtual ~Character();
-		Age getAge();
-		Hunger getHunger();
-		Weight getWeight();
-		Temperature getTemperature();
-		Mood getMood();
+		~Character();
 
-	private:
-		Age age;
-		Weight weight;
-		vector<Want> wants;
-		vector<Need> needs;
-		Hunger hunger;
-		Temperature temperature;
-		Mood mood;
+		Age* getAge();
+		Hunger* getHunger();
+		Weight* getWeight();
+		Temperature* getTemperature();
+		Mood* getMood();
 
 };
 #endif

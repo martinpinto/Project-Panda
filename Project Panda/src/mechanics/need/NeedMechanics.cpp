@@ -11,8 +11,6 @@
 
 #include "NeedMechanics.h"
 
-#include "../../model/Character.h"
-
 NeedMechanics::NeedMechanics() {
 
 }

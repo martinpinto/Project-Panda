@@ -17,7 +17,7 @@
 
 class CleaningMechanics {
 	protected:
-		double cleanliness;
+		double cleanlinessFactor;
 		bool dirty;
 		short maxDirtyFactor;
 

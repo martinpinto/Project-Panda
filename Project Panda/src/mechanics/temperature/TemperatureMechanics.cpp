@@ -11,8 +11,6 @@
 
 #include "TemperatureMechanics.h"
 
-#include "../../model/Character.h"
-
 TemperatureMechanics::TemperatureMechanics() {
 
 }

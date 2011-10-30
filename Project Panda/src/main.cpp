@@ -44,12 +44,13 @@ int main(int argc, char *argv[]) {
 	Character panda;
 
 	// initializing Character "panda"
-	initCharacter(panda);
+	//initCharacter(panda);
 
 	// testing the aging system
 	//testAgingMechanics(panda);
 
-	system("PAUSE");
+	cout << "TEST" << endl;
+	//system("PAUSE");
 	return EXIT_SUCCESS;
 }
 

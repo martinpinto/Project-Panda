@@ -11,11 +11,10 @@
 #include "CleaningMechanics.h"
 
 #include "../../utils/Utils.h"
-#include "../../model/Character.h"
 
 CleaningMechanics::CleaningMechanics() {
 	dirty = false;
-	cleanliness = 100;
+	cleanlinessFactor = 100;
 	maxDirtyFactor = 75;
 }
 
@@ -25,38 +24,38 @@ CleaningMechanics::CleaningMechanics(Character character) {
 
 CleaningMechanics::CleaningMechanics(bool isDirty, double cleanliness, short maxDirtyFactor) {
 	dirty = isDirty;
-	this->cleanliness = cleanliness;
+	this->cleanlinessFactor = cleanliness;
 	this->maxDirtyFactor = maxDirtyFactor;
 }
 
 CleaningMechanics::~CleaningMechanics() {
 	delete &dirty;
-	delete &cleanliness;
+	delete &cleanlinessFactor;
 	delete &maxDirtyFactor;
 }
 
 void CleaningMechanics::increaseCleaniness(double threshold) {
-	cleanliness += threshold;
+	cleanlinessFactor += threshold;
 }
 
 void CleaningMechanics::increaseCleaniness(int threshold) {
-	cleanliness += threshold;
+	cleanlinessFactor += threshold;
 }
 
 void CleaningMechanics::decreaseCleaniness(double threshold) {
-	cleanliness -= threshold;
+	cleanlinessFactor -= threshold;
 }
 
 void CleaningMechanics::decreaseCleaniness(int threshold) {
-	cleanliness -= threshold;
+	cleanlinessFactor -= threshold;
 }
 
 double CleaningMechanics::getCleanlinessPrecise() {
-	return cleanliness;
+	return cleanlinessFactor;
 }
 
 int CleaningMechanics::getCleanliness() {
-	return (int) cleanliness;
+	return (int) cleanlinessFactor;
 }
 
 bool CleaningMechanics::isDirty() {

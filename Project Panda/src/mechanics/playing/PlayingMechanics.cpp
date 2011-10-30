@@ -11,8 +11,6 @@
 
 #include "PlayingMechanics.h"
 
-#include "../../model/Character.h"
-
 PlayingMechanics::PlayingMechanics() {
 
 }

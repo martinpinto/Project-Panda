@@ -28,19 +28,6 @@ class GameMechanics {
 		virtual ~GameMechanics();
 		void setCharacter(Character character);
 
-	private:
-		//Character character;
-		//AgingMechanics agingMechanics;
-		//CleaningMechanics cleaningMechanics;
-		//EatingMechanics eatingMechanics;
-		//HealthMechanics healthMechanics;
-		//LearningMechanics learningMechanics;
-		//MoodMechanics moodMechanics;
-		//NeedMechanics needMechanics;
-		//PlayingMechanics playingMechanics;
-		//SleepingMechanics sleepingMechanics;
-		//TemperatureMechanics temperatureMechanics;
-		//WantMechanics wantMechanics;
 };
 
 #endif /* _GAMEMECHANICS_H_ */

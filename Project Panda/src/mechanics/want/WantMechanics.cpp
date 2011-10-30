@@ -11,8 +11,6 @@
 
 #include "WantMechanics.h"
 
-#include "../../model/Character.h"
-
 WantMechanics::WantMechanics() {
 
 }

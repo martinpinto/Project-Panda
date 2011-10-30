@@ -5,19 +5,21 @@
  * Author: Martin Pinto-Bazurco
  *
  */
-#include "aging/AgingMechanics.h"
-#include "cleaning/CleaningMechanics.h"
-#include "eating/EatingMechanics.h"
-#include "health/HealthMechanics.h"
-#include "learning/LearningMechanics.h"
-#include "mood/MoodMechanics.h"
-#include "need/NeedMechanics.h"
-#include "playing/PlayingMechanics.h"
-#include "sleeping/SleepingMechanics.h"
-#include "temperature/TemperatureMechanics.h"
-#include "want/WantMechanics.h"
-
 #include "GameMechanics.h"
+
+Character character;
+
+AgingMechanics agingMechanics;
+CleaningMechanics cleaningMechanics;
+EatingMechanics eatingMechanics;
+HealthMechanics healthMechanics;
+LearningMechanics learningMechanics;
+MoodMechanics moodMechanics;
+NeedMechanics needMechanics;
+PlayingMechanics playingMechanics;
+SleepingMechanics sleepingMechanics;
+TemperatureMechanics temperatureMechanics;
+WantMechanics wantMechanics;
 
 GameMechanics::GameMechanics() {
 	// TODO Auto-generated constructor stub

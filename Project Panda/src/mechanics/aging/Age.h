@@ -31,6 +31,7 @@ public:
 	Age(int agingFactor);
 	Age(int agingFactor, bool canDie, int maxAge);
 	virtual ~Age();
+
 	int getCurrentAge();
 	long getBirthday();
 	AgePhase getAgePhase();
@@ -45,6 +46,7 @@ private:
 	bool dies;
 	int maxAge;
 	int computeCurrentAge();
+
 };
 
 #endif

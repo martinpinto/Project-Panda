@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include <vector>
-#include "Age.h"
 
 #include "../../model/Character.h"
 
@@ -15,14 +14,16 @@
 #define _AGING_MECHANICS_H_
 
 class AgingMechanics {
-      public:
-             AgingMechanics();
-             AgingMechanics(Character character);
-             void wait ( int seconds );
-             void estimatePhase();
-             Age computeAgeDetails();
-             Age getAge();
-      private:
-             Age age;
+
+public:
+	AgingMechanics();
+	AgingMechanics(Character character);
+
+	void wait(int seconds);
+	void estimatePhase();
+	Age computeAgeDetails();
+	Age getAge();
+private:
+	Age* age;
 };
 #endif

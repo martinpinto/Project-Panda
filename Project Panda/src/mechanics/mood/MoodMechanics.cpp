@@ -11,8 +11,6 @@
 
 #include "MoodMechanics.h"
 
-#include "../../model/Character.h"
-
 MoodMechanics::MoodMechanics() {
 
 }

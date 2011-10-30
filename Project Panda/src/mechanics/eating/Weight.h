@@ -10,9 +10,11 @@
 #define WEIGHT_H_
 
 class Weight {
-public:
-	Weight();
-	virtual ~Weight();
+
+	public:
+		Weight();
+		virtual ~Weight();
+
 };
 
 #endif /* WEIGHT_H_ */

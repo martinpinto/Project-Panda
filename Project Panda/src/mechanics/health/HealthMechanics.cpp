@@ -11,8 +11,6 @@
 
 #include "HealthMechanics.h"
 
-#include "../../model/Character.h"
-
 HealthMechanics::HealthMechanics() {
 
 }

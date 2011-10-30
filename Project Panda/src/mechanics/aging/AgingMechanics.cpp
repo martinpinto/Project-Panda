@@ -11,13 +11,13 @@
 #include "AgingMechanics.h"
 
 #include "../../utils/Utils.h"
-#include "../../model/Character.h"
 
 AgingMechanics::AgingMechanics() {
+
 }
 
 AgingMechanics::AgingMechanics(Character character) {
-
+ this->age = character.getAge();
 }
 
 void AgingMechanics::wait(int seconds) {
@@ -25,7 +25,7 @@ void AgingMechanics::wait(int seconds) {
 }
 
 Age AgingMechanics::getAge() {
-	return this->age;
+	return age;
 }
 
 void AgingMechanics::estimatePhase() {
@@ -33,6 +33,5 @@ void AgingMechanics::estimatePhase() {
 }
 
 Age AgingMechanics::computeAgeDetails() {
-	Age age;
 	return age;
 }

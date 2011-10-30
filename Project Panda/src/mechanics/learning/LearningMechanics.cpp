@@ -11,8 +11,6 @@
 
 #include "LearningMechanics.h"
 
-#include "../../model/Character.h"
-
 LearningMechanics::LearningMechanics() {
 
 }
