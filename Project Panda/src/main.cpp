@@ -47,10 +47,9 @@ int main(int argc, char *argv[]) {
 	//initCharacter(panda);
 
 	// testing the aging system
-	//testAgingMechanics(panda);
+	testAgingMechanics(panda);
 
-	cout << "TEST" << endl;
-	//system("PAUSE");
+	system("PAUSE");
 	return EXIT_SUCCESS;
 }
 

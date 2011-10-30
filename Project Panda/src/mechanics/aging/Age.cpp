@@ -47,10 +47,10 @@ Age::Age(int agingFactor, bool canDie, int maxAge) {
 
 // destructor
 Age::~Age() {
-	delete &birthday;
-	delete &agingFactor;
-	delete &maxAge;
-	delete &dies;
+	//delete &birthday;
+	//delete &agingFactor;
+	//delete &maxAge;
+	//delete &dies;
 }
 
 /**

@@ -17,7 +17,7 @@ AgingMechanics::AgingMechanics() {
 }
 
 AgingMechanics::AgingMechanics(Character character) {
- this->age = character.getAge();
+	this->age = character.getAge();
 }
 
 void AgingMechanics::wait(int seconds) {
