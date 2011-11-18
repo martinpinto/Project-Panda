@@ -15,7 +15,7 @@ Age* age;
 Weight* weight;
 vector<Want>* wants;
 vector<Need>* needs;
-Hunger* hunger;
+HungerState* hunger;
 Temperature* temperature;
 Mood* mood;
 
@@ -41,7 +41,7 @@ Weight* Character::getWeight() {
 	return weight;
 }
 
-Hunger* Character::getHunger() {
+HungerState* Character::getHunger() {
 	return hunger;
 }
 

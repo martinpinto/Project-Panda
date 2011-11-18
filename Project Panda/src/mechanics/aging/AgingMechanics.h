@@ -20,7 +20,7 @@ public:
 	AgingMechanics(Character character);
 
 	void wait(int seconds);
-	void estimatePhase();
+	AgePhase getAgePhase();
 	Age computeAgeDetails();
 	Age getAge();
 private:

@@ -28,8 +28,8 @@ Age AgingMechanics::getAge() {
 	return age;
 }
 
-void AgingMechanics::estimatePhase() {
-
+AgePhase AgingMechanics::getAgePhase() {
+	return age->getAgePhase();
 }
 
 Age AgingMechanics::computeAgeDetails() {

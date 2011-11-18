@@ -13,7 +13,8 @@
 #include "..\mechanics\eating\Weight.h"
 #include "..\mechanics\want\Want.h"
 #include "..\mechanics\need\Need.h"
-#include "..\mechanics\eating\Hunger.h"
+#include "..\mechanics\eating\HungerState.h"
+#include "..\mechanics\eating\HealthState.h"
 #include "..\mechanics\temperature\Temperature.h"
 #include "..\mechanics\mood\Mood.h"
 
@@ -30,7 +31,7 @@ class Character {
 		~Character();
 
 		Age* getAge();
-		Hunger* getHunger();
+		HungerState* getHunger();
 		Weight* getWeight();
 		Temperature* getTemperature();
 		Mood* getMood();

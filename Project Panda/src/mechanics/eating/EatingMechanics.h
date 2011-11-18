@@ -21,6 +21,7 @@ class EatingMechanics {
 		EatingMechanics(Character character);
 		virtual ~EatingMechanics();
 		void determineHunger();
+		HealthState eat();
 
 	private:
 		int caloriesMeter;

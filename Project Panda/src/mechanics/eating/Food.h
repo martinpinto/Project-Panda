@@ -10,12 +10,26 @@
 #define FOOD_H_
 
 class Food {
+	struct FoodType {
+		double calories;
+		enum CaloriesType {
+			HIGH,
+			MEDIUM,
+			LOW
+		};
+	};
+
 	public:
 		Food();
-		virtual ~Food();
+		~Food();
+		bool isPoisoned();
 
 	private:
-		int calories;
+		/* Determines if this food is poisoned or not */
+		bool poisoned;
+
+		/* Computes if this food is poisoned or not using random numbers. */
+		void computePoisoned();
 };
 
 #endif /* FOOD_H_ */

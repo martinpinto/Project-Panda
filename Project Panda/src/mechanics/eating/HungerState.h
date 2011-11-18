@@ -9,16 +9,19 @@
 #include <iostream>
 #include <vector>
 
-#ifndef _HUNGER_H_
-#define _HUNGER_H_
+#ifndef _HUNGERSTATE_H_
+#define _HUNGERSTATE_H_
 
-class Hunger {
+class HungerState {
 	protected:
 		bool hunger;
 		int hungerFactor;
 
 	public:
 		bool hasHunger();
+
+		/* Determines what can of food type the character wants to eat next. */
+		Food nextFood();
 
 	private:
 		void determineHunger();
