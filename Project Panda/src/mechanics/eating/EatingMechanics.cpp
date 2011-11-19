@@ -19,3 +19,7 @@ EatingMechanics::EatingMechanics(Character character) {
 EatingMechanics::~EatingMechanics() {
 	delete &caloriesMeter;
 }
+
+void EatingMechanics::determineHunger() {
+
+}
